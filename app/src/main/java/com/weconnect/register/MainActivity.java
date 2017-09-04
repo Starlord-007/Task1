@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     EditText fname, lname, email, pwd, pwd2, num, dob;
     CheckBox reading, writing, singing, dancing, cricket, football;
     DatePickerDialog datePickerDialog;
+    RadioButton male,female;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,25 +35,15 @@ public class MainActivity extends AppCompatActivity {
         pwd2 = (EditText) findViewById(R.id.ConfirmPassword);
         num = (EditText) findViewById(R.id.Number);
         dob = (EditText) findViewById(R.id.DOB);
+        reading = (CheckBox) findViewById(R.id.Reading);
+        writing = (CheckBox) findViewById(R.id.Writing);
+        singing = (CheckBox) findViewById(R.id.Singing);
+        dancing = (CheckBox) findViewById(R.id.Dancing);
+        cricket = (CheckBox) findViewById(R.id.Cricket);
+        football = (CheckBox) findViewById(R.id.Football);
+        male = (RadioButton) findViewById(R.id.Male);
+        female = (RadioButton) findViewById(R.id.Female);
 
-        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.Sex);
-        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
-        {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId)
-            {
-                switch (checkedId) {
-                    case R.id.Male:
-                        RadioButton value = (RadioButton) findViewById(R.id.Male);
-                        i.putExtra("sex",value.getText().toString());
-                        break;
-                    case R.id.Female:
-                        RadioButton value2 = (RadioButton) findViewById(R.id.Female);
-                        i.putExtra("sex",value2.getText().toString());
-                        break;
-                }
-            }
-        });
 
         dob.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -123,6 +114,14 @@ public class MainActivity extends AppCompatActivity {
                 }
                 i.putExtra("pwd", pass);
 
+                if(male.isChecked()){
+                    i.putExtra("sex","Male");
+                }
+                else
+                {
+                    i.putExtra("sex","Female");
+                }
+
                 final String pass2 = pwd2.getText().toString();
                 if (!(pass2.equals(pass))) {
                     pwd2.requestFocus();
@@ -142,6 +141,38 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
                 i.putExtra("num", number);
+
+                int flag=0;
+
+                    if(reading.isChecked()){
+                        flag=1;
+                        i.putExtra("check1", "Reading");
+                    }
+                    if(writing.isChecked()){
+                        flag=1;
+                        i.putExtra("check2", "Writing");
+                    }
+                    if(singing.isChecked()){
+                        flag=1;
+                        i.putExtra("check3", "Singing");
+                    }
+                    if(dancing.isChecked()){
+                        flag=1;
+                        i.putExtra("check4", "Dancing");
+                    }
+                    if(cricket.isChecked()){
+                        flag=1;
+                        i.putExtra("check5", "Cricket");
+                    }
+                    if(football.isChecked()) {
+                        flag=1;
+                        i.putExtra("check6", "Football");
+                    }
+                    if(flag!=1){
+                        reading.requestFocus();
+                        reading.setError("Select at least one hobby");
+                        return;
+                    }
 
                 startActivity(i);
 

@@ -19,8 +19,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.4"
             android:text="First Name:"
-            android:textSize="20dp"
-            android:textAlignment="textStart" />
+            android:textAlignment="textStart"
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/FirstName"
@@ -46,8 +46,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.4"
             android:text="Last Name:"
-            android:textSize="20dp"
-            android:textAlignment="textStart" />
+            android:textAlignment="textStart"
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/LastName"
@@ -73,20 +73,20 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.4"
             android:text="Email:"
+            android:textAlignment="textStart"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:textAlignment="textStart"
             android:textSize="20dp"
-            android:textAlignment="textStart" />
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp" />
 
-    <TextView
-        android:id="@+id/Email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.6"
-        android:textAlignment="textStart"
-        android:textSize="20dp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="0dp" />
-
-</LinearLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -100,20 +100,20 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.4"
             android:text="Number:"
+            android:textAlignment="textStart"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/Number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:textAlignment="textStart"
             android:textSize="20dp"
-            android:textAlignment="textStart" />
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp" />
 
-    <TextView
-        android:id="@+id/Number"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.6"
-        android:textAlignment="textStart"
-        android:textSize="20dp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="0dp" />
-
-        </LinearLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -127,20 +127,20 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.4"
             android:text="Password:"
+            android:textAlignment="textStart"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:textAlignment="textStart"
             android:textSize="20dp"
-            android:textAlignment="textStart" />
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp" />
 
-    <TextView
-        android:id="@+id/Password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.6"
-        android:textAlignment="textStart"
-        android:textSize="20dp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="0dp" />
-
-</LinearLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -153,9 +153,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1.4"
-            android:text="Sex:"
-            android:textSize="20dp"
-            android:textAlignment="textStart" />
+            android:text="Gender:"
+            android:textAlignment="textStart"
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/Sex"
@@ -181,8 +181,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.4"
             android:text="DOB:"
-            android:textSize="20dp"
-            android:textAlignment="textStart" />
+            android:textAlignment="textStart"
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/DOB"
@@ -196,6 +196,32 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="Hobbies:"
+            android:textAlignment="textStart"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/Hobbies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textAlignment="textStart"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+    </LinearLayout>
 
 
 </LinearLayout>
