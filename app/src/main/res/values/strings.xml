@@ -1,0 +1,28 @@
+<resources>
+    <string-array name="City_names">
+        <item>Aanad</item>
+        <item>Ahmedabad</item>
+        <item>Bhavnagar</item>
+        <item>Gandhinagar</item>
+        <item>Jamnagar</item>
+        <item>Kapadwanj</item>
+        <item>Nadiad</item>
+        <item>Rajkot</item>
+        <item>Suart</item>
+        <item>Vadodra</item>
+    </string-array>
+
+    <string name="app_name">Register</string>
+    <string name="Writing">Writing</string>
+    <string name="Reading">Reading</string>
+    <string name="Singing">Singing</string>
+    <string name="Dancing">Dancing</string>
+    <string name="Football">Football</string>
+    <string name="Cricket">Cricket</string>
+    <string name="Female">Female</string>
+    <string name="Male">Male</string>
+    <string name="City_prompt">Choose a City</string>
+    <string name="Submit">Submit</string>
+
+
+</resources>
